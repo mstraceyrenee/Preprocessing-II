@@ -247,8 +247,14 @@ header nav a:last-of-type {
   width: 30%;
   margin-bottom: 30px;
 }
+.hero {
+  border-bottom: 2px dashed #C0C0C0;
+}
 .hero .hero-img {
   margin-bottom: 20px;
+}
+.hero p {
+  margin-bottom: 10px;
 }
 .btn {
   display: block;
