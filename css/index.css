@@ -250,3 +250,15 @@ header nav a:last-of-type {
 .hero .hero-img {
   margin-bottom: 20px;
 }
+.btn {
+  display: block;
+  background-color: darkcyan;
+  color: white;
+  margin: 0 10px 20px;
+  width: 200px;
+  height: 45px;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px 0;
+}
