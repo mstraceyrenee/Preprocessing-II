@@ -177,9 +177,23 @@ header {
   align-items: baseline;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding-bottom: 10px;
+  }
+}
 header h1 {
   margin: 20px 0;
   padding-left: 55px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    padding: 20px;
+    margin: 0 auto;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -187,8 +201,18 @@ header nav a {
   font-size: 1.6rem;
   padding: 0 20px;
 }
+@media (max-width: 500px) {
+  header nav a {
+    padding: 30px;
+  }
+}
 header nav a:last-of-type {
   margin-right: 55px;
+}
+@media (max-width: 500px) {
+  header nav a:last-of-type {
+    margin-right: 0;
+  }
 }
 .footer {
   width: 100%;
@@ -207,13 +231,32 @@ header nav a:last-of-type {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,9 +273,19 @@ header nav a:last-of-type {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 4;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -243,12 +296,28 @@ header nav a:last-of-type {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
 .hero {
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .hero {
+    width: 90%;
+  }
 }
 .hero .hero-img {
   margin-bottom: 20px;
@@ -267,4 +336,10 @@ header nav a:last-of-type {
   border-radius: 15px;
   text-align: center;
   padding: 15px 0;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
